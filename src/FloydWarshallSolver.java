@@ -48,7 +48,7 @@ public class FloydWarshallSolver {
      * Runs Floyd-Warshall to compute the shortest distance between every pair of nodes.
      * @return The solved All Pairs Shortest Path (APSP) matrix.
      */
-    public double[][] getApspMatrix() {
+    public double[][] getApsgpMatrix() {
         solve();
         return dp;
     }

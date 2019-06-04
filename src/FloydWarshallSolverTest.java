@@ -24,7 +24,7 @@ public class FloydWarshallSolverTest {
         m[5][4] = -2;
 
         FloydWarshallSolver solver = new FloydWarshallSolver(m);
-        double[][] dist = solver.getApspMatrix();
+        double[][] dist = solver.getApsgpMatrix();
 
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)

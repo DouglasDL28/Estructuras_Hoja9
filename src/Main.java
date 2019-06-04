@@ -77,7 +77,7 @@ public class Main {
                 case 1: {
                     int n = grafo.getAdjMatrix().length;
                     FloydWarshallSolver solver = new FloydWarshallSolver(grafo.getAdjMatrix());
-                    double[][] dist = solver.getApspMatrix();
+                    double[][] dist = solver.getApsgpMatrix();
 
                     int i =0, j = 0;
 
@@ -125,7 +125,7 @@ public class Main {
                 case 2: {
                     int n = grafo.getAdjMatrix().length;
                     FloydWarshallSolver solver = new FloydWarshallSolver(grafo.getAdjMatrix());
-                    double[][] dist = solver.getApspMatrix();
+                    double[][] dist = solver.getApsgpMatrix();
 
                     HashMap<Integer,Double> eccentricities = new HashMap<>();
 
@@ -186,7 +186,7 @@ public class Main {
                     System.out.println("Se ha modificado la ruta!");
 
                     FloydWarshallSolver solver = new FloydWarshallSolver(grafo.getAdjMatrix());
-                    double[][] dist = solver.getApspMatrix();
+                    double[][] dist = solver.getApsgpMatrix();
 
                     List<Integer> ruta = solver.reconstructShortestPath(i, j);
 
